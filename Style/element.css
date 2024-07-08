@@ -14,8 +14,8 @@ body {
    margin: 0px;
    padding: 0px;
    border: 0px;
-   overflow-x: hidden;
    background-color: var(--primary-color);
+   scroll-behavior: smooth;
 }
 
 a {
@@ -142,5 +142,27 @@ input[type="input"] {
 }
 
 .button:hover {
-   background: #b0d7ff00;
+   background: var(--primary-color);
+}
+
+.link-button {
+   font-size: 24px;
+   text-align: center;
+   color: var(--contrast-color);
+   padding: 8px;
+   font-weight: 600;
+   border-radius: 24px;
+   background: var(--primary-color-transparent);
+   cursor: pointer;
+   transition: all 0.3s ease;
+   position: relative;
+   display: inline-block;
+   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+   min-width: 40px;
+   border: none;
+}
+
+.link-button:hover {
+   background: var(--primary-color);
 }
