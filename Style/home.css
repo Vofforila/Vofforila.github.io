@@ -23,7 +23,7 @@
    flex-direction: row;
    justify-content: flex-end;
    align-items: center;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
    align-content: normal;
    gap: 8px;
    align-self: flex-end;
@@ -322,10 +322,6 @@
    flex-wrap: nowrap;
    align-content: center;
    gap: 8px;
-   margin: 16px 8px 16px 8px;
-   max-width: 200px;
-   max-height: 80px;
-   min-width: 200px;
 }
 
 .right-achivement-container {
@@ -371,10 +367,6 @@
    flex-wrap: nowrap;
    align-content: center;
    gap: 8px;
-   margin: 16px 8px 16px 8px;
-   max-width: 300px;
-   max-height: 80px;
-   min-width: 300px;
 }
 
 .contact-container {
