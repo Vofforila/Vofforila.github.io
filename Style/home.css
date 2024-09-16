@@ -260,7 +260,6 @@
    align-content: center;
    gap: 8px;
    padding: 16px;
-   width: 100%;
    background-color: var(--primary-color);
 }
 
@@ -269,7 +268,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
    align-content: center;
    gap: 8px;
    margin: 16px 8px 16px 8px;
@@ -295,6 +294,7 @@
    flex-wrap: nowrap;
    align-content: center;
    gap: 8px;
+   width: 100%;
    margin: 16px 8px 16px 8px;
 }
 
