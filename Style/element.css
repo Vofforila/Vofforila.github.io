@@ -19,11 +19,14 @@ body {
 }
 
 a {
+   margin: 0px;
+   font-weight: 400;
+   font-size: 16px;
    text-decoration: none;
+   color: var(--contrast-color);
 }
 
 p,
-a,
 del {
    color: var(--secondary-color);
    margin: 0px;
