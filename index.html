@@ -14,12 +14,48 @@
     <div class="top-left-navbar">
       <p class="big mediumweight">© Coded by Paul</p>
     </div>
-    <div class="top-right-navbar">
+    <div class="top-right-navbar desktop">
       <a class="link-button" href="#about">About</a>
       <a class="link-button" href="#skills">Skills</a>
       <a class="link-button" href="#projects">Projects</a>
       <a class="link-button" href="#work">Work</a>
       <a class="link-button" href="#contact">Contact</a>
+    </div>
+    <div class="top-right-navbar mobile">
+      <button class="menu-btn" onclick="openPanel()">☰</button>
+    </div>
+  </div>
+  <div id="side-panel" class="navbar-side-panel">
+    <div class="side-panel-header">
+      <p class="side-panel-header-text big bigweight">Navigation</p>
+      <a href="javascript:void(0)" class="side-panel-close-button" onclick="closePanel()">×</a>
+    </div>
+    <div class="navbar-side-panel-container">
+      <div class="side-panel-item" onclick="location.href=
+  '#about';closePanel()">
+        <img class=" side-panel-item-image" src="/Images/About.png" alt="error">
+        <p class="side-panel-item-link medium mediumweight">About</>
+      </div>
+      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
+  '#skills';closePanel()">
+        <img class="side-panel-item-image" src="/Images/Skills.png" alt="error">
+        <p class="side-panel-item-link medium mediumweight" href="#skills">Skills</p>
+      </div>
+      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
+  '#projects';closePanel()">
+        <img class="side-panel-item-image" src="/Images/Projects.png" alt="error">
+        <p class="side-panel-item-link medium mediumweight" href="#projects">Projects</p>
+      </div>
+      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
+  '#work';closePanel()">
+        <img class="side-panel-item-image" src="/Images/Work.png" alt="error">
+        <p class="side-panel-item-link medium mediumweight" href="#work">Work</p>
+      </div>
+      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
+  '#contact';closePanel()">
+        <img class="side-panel-item-image" src="/Images/Contact.png" alt="error">
+        <p class="side-panel-item-link medium mediumweight" href="#contact">Contact</p>
+      </div>
     </div>
   </div>
   <main class="main-container" id="main">
@@ -125,7 +161,6 @@
         <div class="project-image-container">
           <img class="project-image" src="/Images/Java1.png" alt="error">
           <img class="project-image" src="/Images/Java2.png" alt="error">
-
         </div>
         <div class="tehnologies-list">
           <p class="medium smallweight">Tehnologies:</p>
@@ -172,7 +207,7 @@
           rel="noopener">Github React</a>
       </div>
     </div>
-    <div class="achivements-container">
+    <div class="achivements-container" id="work">
       <div class="left-achivement-container">
         <p class="title mediumweight">Work Experience</p>
         <div class="job">
@@ -187,6 +222,19 @@
             <p class="medium mediumweight">Tehnical Support LVL 1</p>
           </div>
           <button class="button" onclick="Popup(id)" type="button" id="PRIME-Telecom">Info</button>
+        </div>
+        <div class="job">
+          <div class="year-container">
+            <p class="medium mediumweight">2024</p>
+            <p class="medium mediumweight">2022</p>
+          </div>
+          <img class="achivement-image" src="/Images/job.jpeg" alt="error">
+          <div class="job-description">
+            <a class="medium mediumweight" href="https://www.listafirme.ro/lima-credit-ifn-srl-26388071/"
+              target="_blank" rel="noopener">Lima Credit SRL</a>
+            <p class="medium mediumweight">System Administator</p>
+          </div>
+          <button class="button" onclick="Popup(id)" type="button" id="Lima-Credit">Info</button>
         </div>
         <div class="job">
           <div class="year-container">

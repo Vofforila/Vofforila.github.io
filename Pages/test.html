@@ -4,21 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popup Example</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Side Panel Navigation</title>
+  <link rel="stylesheet" href="/Style/home.css">
+  <link rel="stylesheet" href="/Style/element.css">
 </head>
 
 <body>
-  <button id="openPopup">Open Popup</button>
-
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <p>This is the popup text!</p>
+  <div class="navbar-container" id="navbar">
+    <div class="top-left-navbar">
+      <p class="big mediumweight">© Coded by Paul</p>
+    </div>
+    <div class="top-right-navbar desktop">
+      <a class="link-button" href="#about">About</a>
+      <a class="link-button" href="#skills">Skills</a>
+      <a class="link-button" href="#projects">Projects</a>
+      <a class="link-button" href="#work">Work</a>
+      <a class="link-button" href="#contact">Contact</a>
+    </div>
+    <div class="top-right-navbar mobile">
+      <button class="menu-btn" onclick="openPanel()">☰</button>
     </div>
   </div>
 
+  <div id="side-panel" class="navbar-side-panel">
+    <div class="side-panel-header">
+      <p class="side-panel-header-text big mediumweight">Navigation</p>
+      <a href="javascript:void(0)" class="side-panel-close-button" onclick="closePanel()">×</a>
+    </div>
+    <div class="navbar-side-panel-container">
+      <div class="side-panel-item" onclick="window.location.href=
+'#about'">
+        <img class=" side-panel-item-image" src="/Images/About.png" alt="error">
+        <p class="side-panel-item-link">About</>
+      </div>
+      <div class="side-panel-item">
+        <img class="side-panel-item-image" src="/Images/Skills.png" alt="error">
+        <a class="side-panel-item-link" href="#skills">Skills</a>
+      </div>
+      <div class="side-panel-item">
+        <img class="side-panel-item-image" src="/Images/Projects.png" alt="error">
+        <a class="side-panel-item-link" href="#projects">Projects</a>
+      </div>
+      <div class="side-panel-item">
+        <img class="side-panel-item-image" src="/Images/Work.png" alt="error">
+        <a class="side-panel-item-link" href="#work">Work</a>
+      </div>
+      <div class="side-panel-item">
+        <img class="side-panel-item-image" src="/Images/Contact.png" alt="error">
+        <a class="side-panel-item-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
+<script src="/Javascript/home.js"></script>
 
 </html>

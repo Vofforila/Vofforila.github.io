@@ -1,40 +1,42 @@
 :root {
    --primary-color: #2a2130;
-   --primary-color-transparent: #4e3c57;
+   --primary-color-transparent: #4e3c5784;
    --secondary-color: #ffffff;
    --contrast-color: #b0d7ff;
-   --basic-skill-color: #ffedab;
-   --advanced-skill-color: green;
-   --pro-skill-color: red;
-   --specialbutton-color: black;
 }
 
 html,
 body {
-   width: 100%;
-   height: 100%;
    margin: 0px;
    padding: 0px;
    border: 0px;
    background-color: var(--primary-color);
    scroll-behavior: smooth;
-   overflow-x: hidden;
+}
+
+li,
+ul {
+   padding: 0px;
 }
 
 a {
-   margin: 0px;
-   font-weight: 400;
-   font-size: 16px;
    text-decoration: none;
-   color: var(--contrast-color);
 }
 
 p,
-del {
-   color: var(--secondary-color);
+a,
+del,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul {
+   color: #f5f5f5;
    margin: 0px;
    font-weight: 400;
-   font-size: 16px;
 }
 
 .small {
@@ -68,38 +70,6 @@ del {
 .bigweight {
    font-weight: 800;
 }
-
-.button.basic-skill {
-   color: var(--specialbutton-color);
-   background-color: var(--basic-skill-color);
-}
-
-.button.advanced-skill {
-   color: var(--specialbutton-color);
-   background-color: var(--advanced-skill-color);
-}
-
-.button.pro-skill {
-   color: var(--specialbutton-color);
-   background-color: var(--pro-skill-color);
-}
-
-.button.basic-skill:hover {
-   cursor: default;
-   background-color: var(--basic-skill-color);
-}
-
-.button.advanced-skill:hover {
-   cursor: default;
-   background-color: var(--advanced-skill-color);
-}
-
-.button.pro-skill:hover {
-   cursor: default;
-   background-color: var(--pro-skill-color);
-}
-
-/* Input Field */
 
 input[type="checkbox"] {
    width: 24px;
@@ -171,16 +141,4 @@ input[type="input"] {
 
 .link-button:hover {
    background: var(--primary-color);
-}
-
-@media screen and (min-width: 800px) {
-   .mobile {
-      display: none;
-   }
-}
-
-@media screen and (max-width: 800px) {
-   .desktop {
-      display: none;
-   }
 }
