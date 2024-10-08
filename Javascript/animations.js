@@ -81,10 +81,9 @@ document.addEventListener("DOMContentLoaded", () => {
    const timeline = gsap.timeline({
       scrollTrigger: {
          trigger: about_me_image_changer,
-         start: "top 100%",
-         ednt: "bottom 50%",
-         markers: true,
-         toggleActions: "play reverse play none",
+         start: "top 80%",
+         end: "bottom 50%",
+         toggleActions: "play none none none",
       },
    });
 
