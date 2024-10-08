@@ -70,7 +70,9 @@ window.addEventListener("load", function () {
 document.addEventListener("DOMContentLoaded", () => {
    gsap.registerPlugin(ScrollTrigger);
 
-   const aboutSection = document.querySelector("about-me-image-changer");
+   const about_me_image_changer = document.querySelector(
+      "about-me-image-changer"
+   );
    const aboutImage = document.querySelector(".about-me-image");
    const aboutTitle = document.querySelector(".about-me-title");
    const aboutDescription = document.querySelector(".about-me-description");
@@ -78,10 +80,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
    const timeline = gsap.timeline({
       scrollTrigger: {
-         trigger: aboutSection,
-         start: "top 80%",
-         end: "bottom 20%",
-         toggleActions: "play none none none",
+         trigger: about_me_image_changer,
+         start: "top 100%",
+         ednt: "bottom 50%",
+         markers: true,
+         toggleActions: "play reverse play none",
       },
    });
 
@@ -117,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
    gsap.registerPlugin(ScrollTrigger);
 
    const skill_experience = document.querySelector(".skill-experience");
-   const skill_separator = document.querySelector(".skill-separator");
+   const skill_container = document.querySelector(".skill-container");
    const skill_experience_container = document.querySelector(
       ".skill-experience-container"
    );
@@ -137,11 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
    const timeline = gsap.timeline({
       scrollTrigger: {
-         trigger: skill_separator,
+         trigger: skill_container,
          start: "top 80%",
-         end: "bottom 20%",
-         toggleActions: "play none none reverse",
-         once: true,
+         end: "bottom 50%",
+         toggleActions: "play reverse play reverse",
       },
    });
    timeline.from(skill_experience, {

@@ -39,3 +39,8 @@ function openPanel() {
 function closePanel() {
    side_panel.classList.remove("open");
 }
+
+window.addEventListener("scroll", function () {
+   var main_container = document.getElementById("main-container");
+   main_container.classList.toggle("sticky", window.scrollY > 0);
+});
