@@ -114,7 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Section 2
 
-// GSAP Animation for Skills Experience Section
 document.addEventListener("DOMContentLoaded", () => {
    gsap.registerPlugin(ScrollTrigger);
 
@@ -137,12 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
    );
    const skill_separator_line = document.querySelector(".skill-separator-line");
 
+   console.log(skill_container);
    const timeline = gsap.timeline({
       scrollTrigger: {
          trigger: skill_container,
-         start: "top 80%",
+         start: "0px 50%",
          end: "bottom 50%",
          toggleActions: "play reverse play reverse",
+         markers: true,
       },
    });
    timeline.from(skill_experience, {

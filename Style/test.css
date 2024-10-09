@@ -1,0 +1,30 @@
+.box {
+   width: 75px;
+   height: 75px;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: var(--green);
+   font-weight: 600;
+   color: var(--dark);
+   line-height: 1.2;
+   will-change: transform;
+   background-color: blue;
+   position: absolute;
+   top: 100%;
+   right: 80%;
+}
+
+.test-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: normal;
+   flex-wrap: nowrap;
+   align-content: normal;
+   gap: 8px;
+   padding: 16px 0px 16px 0px;
+   height: 100vh;
+}
