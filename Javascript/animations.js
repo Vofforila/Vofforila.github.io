@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
          start: "0px 50%",
          end: "bottom 50%",
          toggleActions: "play reverse play reverse",
-         markers: true,
+         markers: false,
       },
    });
    timeline.from(skill_experience, {
