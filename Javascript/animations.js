@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: skill_container,
          start: "0px 50%",
          end: "bottom 50%",
-         toggleActions: "play reverse play reverse",
+         toggleActions: "play none none none",
          markers: false,
       },
    });
@@ -231,9 +231,8 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: projectContainer,
          start: "top 80%",
          end: "top 60%",
-         toggleActions: "play none none reverse",
+         toggleActions: "play none none none",
          markers: false,
-         scrub: true,
       },
    });
 
@@ -247,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
             trigger: project,
             start: "top 90%",
             end: "top 90%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             markers: false,
          },
       });
@@ -278,7 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: achievementsContainer,
          start: "top 80%",
          end: "top 60%",
-         toggleActions: "play none none reverse",
+         toggleActions: "play none none none",
          markers: false,
       },
    });
@@ -292,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: achievementsContainer,
          start: "top 80%",
          end: "top 60%",
-         toggleActions: "play none none reverse",
+         toggleActions: "play none none none",
          markers: false,
       },
    });
@@ -308,7 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
             trigger: job,
             start: "top 80%",
             end: "top 60%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             markers: false,
          },
       });
@@ -325,7 +324,7 @@ document.addEventListener("DOMContentLoaded", () => {
             trigger: school,
             start: "top 80%",
             end: "top 60%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             markers: false,
          },
       });
@@ -349,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: contactContainer,
          start: "top 100%",
          end: "top 100%",
-         toggleActions: "play none none reverse",
+         toggleActions: "play none none none",
          markers: false,
       },
    });
@@ -365,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
             trigger: group,
             start: "top 100%",
             end: "top 100%",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
             markers: false,
          },
       });
@@ -381,7 +380,7 @@ document.addEventListener("DOMContentLoaded", () => {
          trigger: linkedInLink,
          start: "top 100%",
          end: "top 100%",
-         toggleActions: "play none none reverse",
+         toggleActions: "play none none none",
          markers: false,
       },
    });
