@@ -1,352 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vofforila Portofolio</title>
+    <link rel="stylesheet" href="/Style/home.css" />
+    <link rel="stylesheet" href="/Style/element.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vofforila Portofolio</title>
-  <link rel="stylesheet" href="/Style/home.css">
-  <link rel="stylesheet" href="/Style/element.css">
-</head>
+  <body>
+    <div class="navbar-container" id="navbar">
+      <div class="top-left-navbar">
+        <p class="big mediumweight">© Coded by Vofforila</p>
+      </div>
+      <div class="top-right-navbar desktop">
+        <a class="link-button" href="#about">About</a>
+        <a class="link-button" href="#skills">Skills</a>
+        <a class="link-button" href="#projects">Projects</a>
+        <a class="link-button" href="#work">Work</a>
+        <a class="link-button" href="#contact">Contact</a>
+      </div>
+      <div class="top-right-navbar mobile">
+        <button class="menu-btn" onclick="openPanel()">☰</button>
+      </div>
+    </div>
+    <div id="side-panel" class="navbar-side-panel">
+      <div class="side-panel-header">
+        <p class="side-panel-header-text big bigweight">Navigation</p>
+        <a
+          href="javascript:void(0)"
+          class="side-panel-close-button"
+          onclick="closePanel()"
+          >×</a
+        >
+      </div>
+      <div class="navbar-side-panel-container">
+        <div
+          class="side-panel-item"
+          onclick="location.href=
+  '#about';closePanel()"
+        >
+          <img
+            class="side-panel-item-image"
+            src="/Images/About.png"
+            alt="error"
+          />
+          <p class="side-panel-item-link medium mediumweight">About</p>
+        </div>
+        <div
+          class="side-panel-item"
+          class="side-panel-item"
+          onclick="location.href=
+  '#skills';closePanel()"
+        >
+          <img
+            class="side-panel-item-image"
+            src="/Images/Skills.png"
+            alt="error"
+          />
+          <p class="side-panel-item-link medium mediumweight" href="#skills">
+            Skills
+          </p>
+        </div>
+        <div
+          class="side-panel-item"
+          class="side-panel-item"
+          onclick="location.href=
+  '#projects';closePanel()"
+        >
+          <img
+            class="side-panel-item-image"
+            src="/Images/Projects.png"
+            alt="error"
+          />
+          <p class="side-panel-item-link medium mediumweight" href="#projects">
+            Projects
+          </p>
+        </div>
+        <div
+          class="side-panel-item"
+          class="side-panel-item"
+          onclick="location.href=
+  '#work';closePanel()"
+        >
+          <img
+            class="side-panel-item-image"
+            src="/Images/Work.png"
+            alt="error"
+          />
+          <p class="side-panel-item-link medium mediumweight" href="#work">
+            Work
+          </p>
+        </div>
+        <div
+          class="side-panel-item"
+          class="side-panel-item"
+          onclick="location.href=
+  '#contact';closePanel()"
+        >
+          <img
+            class="side-panel-item-image"
+            src="/Images/Contact.png"
+            alt="error"
+          />
+          <p class="side-panel-item-link medium mediumweight" href="#contact">
+            Contact
+          </p>
+        </div>
+      </div>
+    </div>
+    <main class="main-container" id="main">
+      <div class="about-me-image-changer" id="about">
+        <img class="about-me-image" src="/Images/Csharp_Logo.png" alt="error" />
+        <div class="about-me-container">
+          <p class="about-me-title title">
+            Desktop App & Game Developer - C C++ C#
+          </p>
+          <p class="about-me-description medium">
+            I am a dedicated Informatics graduate with a strong passion for
+            technology and innovation.
+          </p>
+          <a
+            class="link-button"
+            id="about-me-button"
+            href="/Images/Paul_Berciu_CV.pdf"
+            target="_blank"
+            >My CV</a
+          >
+        </div>
+      </div>
+      <div class="skill-container" id="skills">
+        <p class="skill-experience heading">Skill Experience</p>
+        <div class="skill-experience-container">
+          <button class="button basic-skill" type="button">0 - 1 years</button>
+          <button class="button advanced-skill" type="button">
+            2 - 4 years
+          </button>
+          <button class="button pro-skill" type="button">5+ years</button>
+        </div>
+        <div class="skill-separator">
+          <div class="right-skill-container">
+            <p class="heading">Tehnologies</p>
+            <div class="soft-skill-container">
+              <button class="button pro-skill" type="button">Unity</button>
+              <button class="button pro-skill" type="button">Github</button>
+              <button class="button pro-skill" type="button">Fusion</button>
+              <button class="button pro-skill" type="button">Firebase</button>
+              <button class="button pro-skill" type="button">
+                Visual Studio 2019
+              </button>
+              <button class="button pro-skill" type="button">
+                Cisco Packetracer
+              </button>
+              <button class="button advanced-skill" type="button">
+                Microsoft Office 360
+              </button>
 
-<body>
-  <div class="navbar-container" id="navbar">
-    <div class="top-left-navbar">
-      <p class="big mediumweight">© Coded by Vofforila</p>
-    </div>
-    <div class="top-right-navbar desktop">
-      <a class="link-button" href="#about">About</a>
-      <a class="link-button" href="#skills">Skills</a>
-      <a class="link-button" href="#projects">Projects</a>
-      <a class="link-button" href="#work">Work</a>
-      <a class="link-button" href="#contact">Contact</a>
-    </div>
-    <div class="top-right-navbar mobile">
-      <button class="menu-btn" onclick="openPanel()">☰</button>
-    </div>
-  </div>
-  <div id="side-panel" class="navbar-side-panel">
-    <div class="side-panel-header">
-      <p class="side-panel-header-text big bigweight">Navigation</p>
-      <a href="javascript:void(0)" class="side-panel-close-button" onclick="closePanel()">×</a>
-    </div>
-    <div class="navbar-side-panel-container">
-      <div class="side-panel-item" onclick="location.href=
-  '#about';closePanel()">
-        <img class=" side-panel-item-image" src="/Images/About.png" alt="error">
-        <p class="side-panel-item-link medium mediumweight">About</>
-      </div>
-      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
-  '#skills';closePanel()">
-        <img class="side-panel-item-image" src="/Images/Skills.png" alt="error">
-        <p class="side-panel-item-link medium mediumweight" href="#skills">Skills</p>
-      </div>
-      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
-  '#projects';closePanel()">
-        <img class="side-panel-item-image" src="/Images/Projects.png" alt="error">
-        <p class="side-panel-item-link medium mediumweight" href="#projects">Projects</p>
-      </div>
-      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
-  '#work';closePanel()">
-        <img class="side-panel-item-image" src="/Images/Work.png" alt="error">
-        <p class="side-panel-item-link medium mediumweight" href="#work">Work</p>
-      </div>
-      <div class="side-panel-item" class="side-panel-item" onclick="location.href=
-  '#contact';closePanel()">
-        <img class="side-panel-item-image" src="/Images/Contact.png" alt="error">
-        <p class="side-panel-item-link medium mediumweight" href="#contact">Contact</p>
-      </div>
-    </div>
-  </div>
-  <main class="main-container" id="main">
-    <div class="about-me-image-changer" id="about">
-      <img class="about-me-image" src="/Images/Csharp_Logo.png" alt="error">
-      <div class="about-me-container">
-        <p class="about-me-title title">Desktop App & Game Developer - C C++ C#</p>
-        <p class="about-me-description medium">I am a dedicated Informatics graduate with a strong passion for
-          technology
-          and
-          innovation.</p>
-        <a class="link-button" id="about-me-button" href="/Images/Paul_Berciu_CV.pdf" target="_blank">My CV</a>
-      </div>
-    </div>
-    <div class="skill-container" id="skills">
-      <p class="skill-experience heading">Skill Experience</p>
-      <div class="skill-experience-container">
-        <button class="button basic-skill" type="button">0 - 1 years</button>
-        <button class="button advanced-skill" type="button">2 - 4 years</button>
-        <button class="button pro-skill" type="button">5+ years</button>
-      </div>
-      <div class="skill-separator">
-        <div class="right-skill-container">
-          <p class="heading">Tehnologies</p>
-          <div class="soft-skill-container">
-            <button class="button pro-skill" type="button">Unity</button>
-            <button class="button pro-skill" type="button">Github</button>
-            <button class="button pro-skill" type="button">Fusion</button>
-            <button class="button pro-skill" type="button">Firebase</button>
-            <button class="button pro-skill" type="button">Visual Studio 2019</button>
-            <button class="button pro-skill" type="button">Cisco Packetracer</button>
-            <button class="button advanced-skill" type="button">Microsoft Office 360</button>
-
-            <button class="button advanced-skill" type="button">Google Drive</button>
-            <button class="button advanced-skill" type="button">Blender</button>
-            <button class="button advanced-skill" type="button">Arduino</button>
-            <button class="button advanced-skill" type="button">Soft Logo</button>
-            <button class="button advanced-skill" type="button">Visual Studio Code</button>
-            <button class="button advanced-skill" type="button">Flutter</button>
-            <button class="button advanced-skill" type="button">Draw.io</button>
-            <button class="button advanced-skill" type="button">AWS</button>
-            <button class="button advanced-skill" type="button">Intellij IDEA</button>
-            <button class="button advanced-skill" type="button">Android Studio</button>
-            <button class="button basic-skill" type="button">Docker</button>
-            <button class="button basic-skill" type="button">Replit</button>
-            <button class="button basic-skill" type="button">Figma</button>
-            <button class="button basic-skill" type="button">Pycharm</button>
-            <button class="button basic-skill" type="button">Adobe Photoshop</button>
+              <button class="button advanced-skill" type="button">
+                Google Drive
+              </button>
+              <button class="button advanced-skill" type="button">
+                Blender
+              </button>
+              <button class="button advanced-skill" type="button">
+                Arduino
+              </button>
+              <button class="button advanced-skill" type="button">
+                Soft Logo
+              </button>
+              <button class="button advanced-skill" type="button">
+                Visual Studio Code
+              </button>
+              <button class="button advanced-skill" type="button">
+                Flutter
+              </button>
+              <button class="button advanced-skill" type="button">
+                Draw.io
+              </button>
+              <button class="button advanced-skill" type="button">AWS</button>
+              <button class="button advanced-skill" type="button">
+                Intellij IDEA
+              </button>
+              <button class="button advanced-skill" type="button">
+                Android Studio
+              </button>
+              <button class="button basic-skill" type="button">Docker</button>
+              <button class="button basic-skill" type="button">Replit</button>
+              <button class="button basic-skill" type="button">Figma</button>
+              <button class="button basic-skill" type="button">Pycharm</button>
+              <button class="button basic-skill" type="button">
+                Adobe Photoshop
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="skill-separator-line"></div>
-        <div class="left-skill-container">
-          <p class="heading">Languages</p>
-          <div class="hard-skill-container">
-            <button class="button pro-skill" type="button">HTML CSS Javascript</button>
-            <button class="button pro-skill" type="button">C#</button>
-            <button class="button advanced-skill" type="button">Java</button>
-            <button class="button advanced-skill" type="button">Dart</button>
-            <button class="button advanced-skill" type="button">C</button>
-            <button class="button advanced-skill" type="button">C++</button>
-            <button class="button advanced-skill" type="button">Linux/Bash</button>
-            <button class="button basic-skill" type="button">React</button>
-            <button class="button basic-skill" type="button">TypeScript</button>
-            <button class="button basic-skill" type="button">Kotlin</button>
-            <button class="button basic-skill" type="button">Python</button>
+          <div class="skill-separator-line"></div>
+          <div class="left-skill-container">
+            <p class="heading">Languages</p>
+            <div class="hard-skill-container">
+              <button class="button pro-skill" type="button">
+                HTML CSS Javascript
+              </button>
+              <button class="button pro-skill" type="button">C#</button>
+              <button class="button advanced-skill" type="button">Java</button>
+              <button class="button advanced-skill" type="button">Dart</button>
+              <button class="button advanced-skill" type="button">C</button>
+              <button class="button advanced-skill" type="button">C++</button>
+              <button class="button advanced-skill" type="button">
+                Linux/Bash
+              </button>
+              <button class="button basic-skill" type="button">React</button>
+              <button class="button basic-skill" type="button">
+                TypeScript
+              </button>
+              <button class="button basic-skill" type="button">Kotlin</button>
+              <button class="button basic-skill" type="button">Python</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="project-container" id="projects">
-      <p class="heading bigweight">Projects</p>
-      <div class="project">
-        <p class="big mediumweight">Flutter Shopping Cart App</p>
-        <p class="medium smallweight">This is a Shopping Cart where you can add items and attack prices and images to
-          them. You can then connect with a
-          account and add/remove items from your cart</p>
-        <div class="tehnologies-list">
-          <p class="medium mediumweight">Tehnologies:</p>
-          <p class="medium mediumweight">Dart +</p>
-          <p class="medium mediumweight">NoSQL Firebase +</p>
-          <p class="medium mediumweight">Flutter</p>
+      <div class="project-container" id="projects">
+        <p class="heading bigweight">Projects</p>
+        <div class="project">
+          <p class="big mediumweight">Flutter Shopping Cart App</p>
+          <p class="medium smallweight">
+            This is a Shopping Cart where you can add items and attack prices
+            and images to them. You can then connect with a account and
+            add/remove items from your cart
+          </p>
+          <div class="tehnologies-list">
+            <p class="medium mediumweight">Tehnologies:</p>
+            <p class="medium mediumweight">Dart +</p>
+            <p class="medium mediumweight">NoSQL Firebase +</p>
+            <p class="medium mediumweight">Flutter</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/shopping_cart"
+            target="_blank"
+            rel="noopener"
+            >Github</a
+          >
+          <div class="project-image-container">
+            <img class="project-image" src="/Images/Flutter1.png" alt="error" />
+            <img class="project-image" src="/Images/Flutter2.png" alt="error" />
+            <img class="project-image" src="/Images/Flutter3.png" alt="error" />
+            <img class="project-image" src="/Images/Flutter4.png" alt="error" />
+          </div>
         </div>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/shopping_cart" target="_blank"
-          rel="noopener">Github</a>
-        <div class="project-image-container">
-          <img class="project-image" src="/Images/Flutter1.png" alt="error">
-          <img class="project-image" src="/Images/Flutter2.png" alt="error">
-          <img class="project-image" src="/Images/Flutter3.png" alt="error">
-          <img class="project-image" src="/Images/Flutter4.png" alt="error">
+        <div class="project-separator"></div>
+        <div class="project">
+          <p class="big mediumweight">React Genshin Artifact Filter</p>
+          <p class="medium smallweight">
+            This is a project that I contributed to. Worked on the Artifact
+            Filtering Page - adding filters and sorting the database
+          </p>
+          <div class="tehnologies-list">
+            <p class="medium mediumweight">Tehnologies:</p>
+            <p class="medium mediumweight">React +</p>
+            <p class="medium mediumweight">TypeScript</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://frzyc.github.io/genshin-optimizer/"
+            target="_blank"
+            rel="noopener"
+            >Public Website</a
+          >
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/Perfect-Artifact-Filter"
+            target="_blank"
+            rel="noopener"
+            >Github Fork</a
+          >
+          <a
+            class="medium mediumweight"
+            href="https://github.com/frzyc/genshin-optimizer"
+            target="_blank"
+            rel="noopener"
+            >Official Github</a
+          >
+          <div class="project-image-container">
+            <img
+              class="project-image"
+              src="/Images/GenshinArtifact1.png"
+              alt="error"
+            />
+            <img
+              class="project-image"
+              src="/Images/GenshinArtifact2.png"
+              alt="error"
+            />
+          </div>
+        </div>
+        <div class="project-separator"></div>
+        <div class="project">
+          <p class="big mediumweight">Unity 3d Multiplayer Game</p>
+          <div class="tehnologies-list">
+            <p class="medium smallweight">Tehnologies:</p>
+            <p class="medium smallweight">C# +</p>
+            <p class="medium smallweight">NoSQL Firebase +</p>
+            <p class="medium smallweight">Photon Fusion +</p>
+            <p class="medium smallweight">Unity +</p>
+            <p class="medium smallweight">Blender +</p>
+            <p class="medium smallweight">Architecture(Diagram.io)</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/Unity-Game"
+            target="_blank"
+            rel="noopener"
+            >Github</a
+          >
+          <div class="project-image-container">
+            <img
+              class="project-image"
+              src="/Images/UnityGame1.png"
+              alt="error"
+            />
+            <img
+              class="project-image"
+              src="/Images/UnityGame2.jpg"
+              alt="error"
+            />
+            <img
+              class="project-image"
+              src="/Images/UnityGame3.png"
+              alt="error"
+            />
+          </div>
+        </div>
+        <div class="project-separator"></div>
+        <div class="project">
+          <p class="big mediumweight">Java Book Store</p>
+          <p class="medium smallweight">
+            This is a simple book store that has the following commands
+          </p>
+          <div class="tehnologies-list">
+            <p class="medium smallweight">Tehnologies:</p>
+            <p class="medium smallweight">Java</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/Book_Store"
+            target="_blank"
+            rel="noopener"
+            >Github</a
+          >
+          <div class="project-image-container">
+            <img class="project-image" src="/Images/Java1.png" alt="error" />
+            <img class="project-image" src="/Images/Java2.png" alt="error" />
+          </div>
+        </div>
+        <div class="project-separator"></div>
+        <div class="project">
+          <p class="big mediumweight">Android Firebase Market App</p>
+          <p class="medium smallweight">
+            This is Android Market App that lets you add products in a inventory
+            online using Firebase. You can then use those items by
+            adding/removing them from your cart
+          </p>
+          <div class="tehnologies-list">
+            <p class="medium smallweight">Tehnologies:</p>
+            <p class="medium smallweight">Java +</p>
+            <p class="medium smallweight">Kotlin +</p>
+            <p class="medium smallweight">NoSQL Firebase +</p>
+            <p class="medium smallweight">Android SDK</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/Andorid-Firebase-Market-App"
+            target="_blank"
+            rel="noopener"
+            >Github</a
+          >
+          <div class="project-image-container">
+            <img class="project-image" src="/Images/Android1.png" alt="error" />
+            <img class="project-image" src="/Images/Android2.png" alt="error" />
+            <img class="project-image" src="/Images/Android3.png" alt="error" />
+            <img class="project-image" src="/Images/Android4.png" alt="error" />
+          </div>
+        </div>
+        <div class="project-separator"></div>
+        <div class="project">
+          <p class="big mediumweight">
+            Database driven basket with Admin Interface (Plain Javascript /
+            React)
+          </p>
+          <p class="medium smallweight">
+            This is a Blog + Database driven basket with Admin Interface for
+            adding Products. First version made with Javascript and second with
+            React
+          </p>
+          <div class="tehnologies-list">
+            <p class="medium smallweight">Tehnologies:</p>
+            <p class="medium smallweight">HTML +</p>
+            <p class="medium smallweight">CSS +</p>
+            <p class="medium smallweight">Javascript / React +</p>
+            <p class="medium smallweight">NoSQL Firebase</p>
+          </div>
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/Blog"
+            target="_blank"
+            rel="noopener"
+            >Github Javascript</a
+          >
+          <a
+            class="medium mediumweight"
+            href="https://github.com/Vofforila/react-basket"
+            target="_blank"
+            rel="noopener"
+            >Github React</a
+          >
+          <div class="project-image-container">
+            <img class="project-image" src="/Images/Web1.png" alt="error" />
+            <img class="project-image" src="/Images/Web2.png" alt="error" />
+            <img class="project-image" src="/Images/Web3.png" alt="error" />
+          </div>
         </div>
       </div>
-      <div class="project">
-        <p class="big mediumweight">Unity 3d Multiplayer Game</p>
-        <div class="tehnologies-list">
-          <p class="medium smallweight">Tehnologies:</p>
-          <p class="medium smallweight">C# +</p>
-          <p class="medium smallweight">NoSQL Firebase +</p>
-          <p class="medium smallweight">Photon Fusion +</p>
-          <p class="medium smallweight">Unity +</p>
-          <p class="medium smallweight">Blender +</p>
-          <p class="medium smallweight">Architecture(Diagram.io)</p>
-        </div>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/Unity-Game" target="_blank"
-          rel="noopener">Github</a>
-        <div class="project-image-container">
-          <img class="project-image" src="/Images/UnityGame1.png" alt="error">
-          <img class="project-image" src="/Images/UnityGame2.jpg" alt="error">
-          <img class="project-image" src="/Images/UnityGame3.png" alt="error">
-        </div>
-      </div>
-      <div class="project">
-        <p class="big mediumweight">Java Book Store</p>
-        <p class="medium smallweight">This is a simple book store that has the following commands</p>
-        <div class="tehnologies-list">
-          <p class="medium smallweight">Tehnologies:</p>
-          <p class="medium smallweight">Java</p>
-        </div>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/Book_Store" target="_blank"
-          rel="noopener">Github</a>
-        <div class="project-image-container">
-          <img class="project-image" src="/Images/Java1.png" alt="error">
-          <img class="project-image" src="/Images/Java2.png" alt="error">
-        </div>
-      </div>
-      <div class="project">
-        <p class="big mediumweight">Android Firebase Market App</p>
-        <p class="medium smallweight">This is Android Market App that lets you add products in a inventory online using
-          Firebase. You can then use those items
-          by adding/removing them from your cart</p>
-        <div class="tehnologies-list">
-          <p class="medium smallweight">Tehnologies:</p>
-          <p class="medium smallweight">Java +</p>
-          <p class="medium smallweight">Kotlin +</p>
-          <p class="medium smallweight">NoSQL Firebase +</p>
-          <p class="medium smallweight">Android SDK</p>
-        </div>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/Andorid-Firebase-Market-App" target="_blank"
-          rel="noopener">Github</a>
-        <div class="project-image-container">
-          <img class="project-image" src="/Images/Android1.png" alt="error">
-          <img class="project-image" src="/Images/Android2.png" alt="error">
-          <img class="project-image" src="/Images/Android3.png" alt="error">
-          <img class="project-image" src="/Images/Android4.png" alt="error">
-        </div>
-      </div>
-      <div class="project">
-        <p class="big mediumweight">Database driven basket with Admin Interface (Plain Javascript / React)</p>
-        <p class="medium smallweight">This is a Blog + Database driven basket with Admin Interface for adding Products.
-          First version made with Javascript and second with React</p>
-        <div class="tehnologies-list">
-          <p class="medium smallweight">Tehnologies:</p>
-          <p class="medium smallweight">HTML +</p>
-          <p class="medium smallweight">CSS +</p>
-          <p class="medium smallweight">Javascript / React +</p>
-          <p class="medium smallweight">NoSQL Firebase</p>
-        </div>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/Blog" target="_blank" rel="noopener">Github
-          Javascript</a>
-        <a class="medium mediumweight" href="https://github.com/Vofforila/react-basket" target="_blank"
-          rel="noopener">Github React</a>
-        <div class="project-image-container">
-          <img class="project-image" src="/Images/Web1.png" alt="error">
-          <img class="project-image" src="/Images/Web2.png" alt="error">
-          <img class="project-image" src="/Images/Web3.png" alt="error">
-        </div>
-      </div>
-    </div>
-    <div class="achivements-container" id="work">
-      <div class="left-achivement-container">
-        <p class="title mediumweight">Work Experience</p>
-        <div class="job">
-          <div class="year-container">
-            <p class="medium mediumweight">Pres.</p>
-            <p class="medium mediumweight">2024</p>
+      <div class="achivements-container" id="work">
+        <div class="left-achivement-container">
+          <p class="title mediumweight">Work Experience</p>
+          <div class="job">
+            <div class="year-container">
+              <p class="medium mediumweight">Pres.</p>
+              <p class="medium mediumweight">2024</p>
+            </div>
+            <img
+              class="achivement-image"
+              src="/Images/PRIME_Telecom.jpg"
+              alt="error"
+            />
+            <div class="job-description">
+              <a
+                class="medium mediumweight"
+                href="https://www.primetelecom.ro/"
+                target="_blank"
+                rel="noopener"
+                >PRIME Telecom</a
+              >
+              <p class="medium mediumweight">Technical Operator Full-time</p>
+            </div>
+            <button
+              class="button"
+              onclick="Popup(id)"
+              type="button"
+              id="PRIME-Telecom"
+            >
+              Info
+            </button>
           </div>
-          <img class="achivement-image" src="/Images/PRIME_Telecom.jpg" alt="error">
-          <div class="job-description">
-            <a class="medium mediumweight" href="https://www.primetelecom.ro/" target="_blank" rel="noopener">PRIME
-              Telecom</a>
-            <p class="medium mediumweight">Technical Operator Full-time</p>
-          </div>
-          <button class="button" onclick="Popup(id)" type="button" id="PRIME-Telecom">Info</button>
-        </div>
-        <div class="job">
-          <div class="year-container">
-            <p class="medium mediumweight">2024</p>
-            <p class="medium mediumweight">2022</p>
-          </div>
-          <img class="achivement-image" src="/Images/job.jpeg" alt="error">
-          <div class="job-description">
-            <a class="medium mediumweight" href="https://www.listafirme.ro/lima-credit-ifn-srl-26388071/"
-              target="_blank" rel="noopener">Lima Credit SRL Part-time</a>
-            <p class="medium mediumweight">System Administator</p>
-          </div>
-          <button class="button" onclick="Popup(id)" type="button" id="Lima-Credit">Info</button>
-        </div>
-        <div class="job">
-          <div class="year-container">
-            <p class="medium mediumweight">2024</p>
-            <p class="medium mediumweight">2023</p>
-          </div>
-          <img class="achivement-image" src="/Images/ITTeams.png" alt="error">
-          <div class="job-description">
-            <a class="medium mediumweight" href="https://it-teams.com/" target="_blank" rel="noopener">IT-Teams</a>
-            <p class="medium mediumweight">Flutter & Dart Developer - Intership</p>
-          </div>
-          <button class="button" onclick="Popup(id)" type="button" id="IT-Teams">Info</button>
-        </div>
-      </div>
-      <div class="right-achivement-container">
-        <p class="title mediumweight">Education</p>
-        <div class="education-container">
-          <div class="school">
+          <div class="job">
             <div class="year-container">
               <p class="medium mediumweight">2024</p>
-              <p class="medium mediumweight">2021</p>
+              <p class="medium mediumweight">2022</p>
             </div>
-            <img class="achivement-image" src="/Images/UTM.webp" alt="error">
-            <div class="education-description">
-              <a class="medium mediumweight" href="https://www.utm.ro/" target="_blank">Titu Maiorescu University -
-                Bucharest</a>
-              <p class="medium mediumweight">Computer Science / Informatics</p>
-              <p class="medium mediumweight">Grade: 9.13</p>
+            <img class="achivement-image" src="/Images/job.jpeg" alt="error" />
+            <div class="job-description">
+              <a
+                class="medium mediumweight"
+                href="https://www.listafirme.ro/lima-credit-ifn-srl-26388071/"
+                target="_blank"
+                rel="noopener"
+                >Lima Credit SRL Part-time</a
+              >
+              <p class="medium mediumweight">System Administator</p>
             </div>
+            <button
+              class="button"
+              onclick="Popup(id)"
+              type="button"
+              id="Lima-Credit"
+            >
+              Info
+            </button>
           </div>
-          <div class="school">
+          <div class="job">
             <div class="year-container">
-              <p class="medium mediumweight">2021</p>
-              <p class="medium mediumweight">2017</p>
+              <p class="medium mediumweight">2024</p>
+              <p class="medium mediumweight">2023</p>
             </div>
-            <img class="achivement-image" src="/Images/liceu.jpg" alt="error">
-            <div class="education-description">
-              <a class="medium mediumweight" href="https://www.laicuza.ro/" target="_blank">"Alexandru Ioan Cuza"
-                Theoretical Hight
-                School - Bucharest</a>
-              <p class="medium mediumweight">Economy, Sociology, History, Psychology</p>
-              <p class="medium mediumweight">Grade: 9.15</p>
+            <img
+              class="achivement-image"
+              src="/Images/ITTeams.png"
+              alt="error"
+            />
+            <div class="job-description">
+              <a
+                class="medium mediumweight"
+                href="https://it-teams.com/"
+                target="_blank"
+                rel="noopener"
+                >IT-Teams</a
+              >
+              <p class="medium mediumweight">
+                Flutter & Dart Developer - Intership
+              </p>
             </div>
+            <button
+              class="button"
+              onclick="Popup(id)"
+              type="button"
+              id="IT-Teams"
+            >
+              Info
+            </button>
           </div>
-          <div class="school">
-            <div class="year-container">
-              <p class="medium mediumweight">2017</p>
-              <p class="medium mediumweight">2009</p>
+        </div>
+        <div class="right-achivement-container">
+          <p class="title mediumweight">Education</p>
+          <div class="education-container">
+            <div class="school">
+              <div class="year-container">
+                <p class="medium mediumweight">2024</p>
+                <p class="medium mediumweight">2021</p>
+              </div>
+              <img
+                class="achivement-image"
+                src="/Images/UTM.webp"
+                alt="error"
+              />
+              <div class="education-description">
+                <a
+                  class="medium mediumweight"
+                  href="https://www.utm.ro/"
+                  target="_blank"
+                  >Titu Maiorescu University - Bucharest</a
+                >
+                <p class="medium mediumweight">
+                  Computer Science / Informatics
+                </p>
+                <p class="medium mediumweight">Grade: 9.13</p>
+              </div>
             </div>
-            <img class="achivement-image" src="/Images/generala.png" alt="error">
-            <div class="education-description">
-              <a class="medium mediumweight" href="https://scoala56.ro/" target="_blank">Primary Education</a>
-              <p class="medium mediumweight">School Nr.56 - Bucharest</p>
+            <div class="school">
+              <div class="year-container">
+                <p class="medium mediumweight">2021</p>
+                <p class="medium mediumweight">2017</p>
+              </div>
+              <img
+                class="achivement-image"
+                src="/Images/liceu.jpg"
+                alt="error"
+              />
+              <div class="education-description">
+                <a
+                  class="medium mediumweight"
+                  href="https://www.laicuza.ro/"
+                  target="_blank"
+                  >"Alexandru Ioan Cuza" Theoretical Hight School - Bucharest</a
+                >
+                <p class="medium mediumweight">
+                  Economy, Sociology, History, Psychology
+                </p>
+                <p class="medium mediumweight">Grade: 9.15</p>
+              </div>
+            </div>
+            <div class="school">
+              <div class="year-container">
+                <p class="medium mediumweight">2017</p>
+                <p class="medium mediumweight">2009</p>
+              </div>
+              <img
+                class="achivement-image"
+                src="/Images/generala.png"
+                alt="error"
+              />
+              <div class="education-description">
+                <a
+                  class="medium mediumweight"
+                  href="https://scoala56.ro/"
+                  target="_blank"
+                  >Primary Education</a
+                >
+                <p class="medium mediumweight">School Nr.56 - Bucharest</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="popup" id="popup-work">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <div class="popup-content">
-        <p class="heading bigweight" id="popup-work-title"></p>
-        <p class="medium smallweight" id="popup-work-description">This is the information about PRIME Telecom...</p>
+      <div class="popup" id="popup-work">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+          <p class="heading bigweight" id="popup-work-title"></p>
+          <p class="medium smallweight" id="popup-work-description">
+            This is the information about PRIME Telecom...
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="contact-container" id="contact">
-      <p class="title mediumweight">Contact</p>
-      <div class="contact-grouper">
-        <p class="medium mediumweight">Name:</p>
-        <p class="medium smallweight">Paul Berciu</p>
+      <div class="contact-container" id="contact">
+        <p class="title mediumweight">Contact</p>
+        <div class="contact-grouper">
+          <p class="medium mediumweight">Name:</p>
+          <p class="medium smallweight">Paul Berciu</p>
+        </div>
+        <div class="contact-grouper">
+          <p class="medium mediumweight">Residence:</p>
+          <p class="medium smallweight">Bucharest, Romania</p>
+        </div>
+        <div class="contact-grouper">
+          <p class="medium mediumweight">Email:</p>
+          <a class="medium smallweight" href="mailto:paul.berciu05@gmai.com"
+            >paul.berciu05@gmail.com</a
+          >
+        </div>
+        <div class="contact-grouper">
+          <p class="medium mediumweight">Phone Number:</p>
+          <a class="medium smallweight" href="tel:+40740474941"
+            >+(40) 740474941</a
+          >
+        </div>
+        <div class="contact-grouper">
+          <p class="medium mediumweight">Date of birth:</p>
+          <p class="medium smallweight">05/09/2002</p>
+        </div>
+        <a
+          class="medium mediumweight"
+          href="https://www.linkedin.com/in/paul-berciu-277b0324a/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <p class="medium smallweight"></p>
       </div>
-      <div class="contact-grouper">
-        <p class="medium mediumweight">Residence:</p>
-        <p class="medium smallweight">Bucharest, Romania</p>
-      </div>
-      <div class="contact-grouper">
-        <p class="medium mediumweight">Email:</p>
-        <a class="medium smallweight" href="mailto:paul.berciu05@gmai.com">paul.berciu05@gmail.com</a>
-      </div>
-      <div class="contact-grouper">
-        <p class="medium mediumweight">Phone Number:</p>
-        <a class="medium smallweight" href="tel:+40740474941">+(40) 740474941</a>
-      </div>
-      <div class="contact-grouper">
-        <p class="medium mediumweight">Date of birth:</p>
-        <p class="medium smallweight">05/09/2002</p>
-      </div>
-      <a class="medium mediumweight" href="https://www.linkedin.com/in/paul-berciu-277b0324a/" target="_blank"
-        rel="noopener">LinkedIn</a>
-      <p class="medium smallweight"></p>
-    </div>
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  <script src="/Javascript/home.js"></script>
-  <script src="/Javascript/animations.js"></script>
-</body>
-
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="/Javascript/home.js"></script>
+    <script src="/Javascript/animations.js"></script>
+  </body>
 </html>
