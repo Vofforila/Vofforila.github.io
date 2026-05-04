@@ -23,13 +23,13 @@ window.addEventListener("load", function () {
       color: "#ff6347",
       ease: "power2.out",
       delay: 0.3,
-    }
+    },
   );
 
   const skill_experience = Array.from(
-    document.querySelectorAll(".hard-skill-container button")
+    document.querySelectorAll(".hard-skill-container button"),
   ).concat(
-    Array.from(document.querySelectorAll(".soft-skill-container button"))
+    Array.from(document.querySelectorAll(".soft-skill-container button")),
   );
 
   skill_experience.forEach((button) => {
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const about_me_image_changer = document.querySelector(
-    "about-me-image-changer"
+    ".about-me-image-changer",
   );
   const aboutImage = document.querySelector(".about-me-image");
   const aboutTitle = document.querySelector(".about-me-title");
@@ -144,19 +144,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const skill_experience = document.querySelector(".skill-experience");
   const skill_container = document.querySelector(".skill-container");
   const skill_experience_container = document.querySelector(
-    ".skill-experience-container"
+    ".skill-experience-container",
   );
   const right_skill_container = document.querySelector(
-    ".right-skill-container .heading"
+    ".right-skill-container .heading",
   );
   const left_skill_container = document.querySelector(
-    ".left-skill-container .heading"
+    ".left-skill-container .heading",
   );
   const soft_skill_container = document.querySelectorAll(
-    ".soft-skill-container .button"
+    ".soft-skill-container .button",
   );
   const hard_skill_container = document.querySelectorAll(
-    ".hard-skill-container .button"
+    ".hard-skill-container .button",
   );
   const skill_separator_line = document.querySelector(".skill-separator-line");
 
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
       opacity: 0,
       ease: "power2.out",
     },
-    "-=0.4"
+    "-=0.4",
   );
 
   timeline.from(
@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
       stagger: 0.1,
       ease: "back.out(1.7)",
     },
-    "-=0.3"
+    "-=0.3",
   );
 
   timeline.from(
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
       width: 0,
       ease: "power2.out",
     },
-    "-=0.2"
+    "-=0.2",
   );
 
   timeline.from(left_skill_container, {
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
       stagger: 0.1,
       ease: "back.out(1.7)",
     },
-    "-=0.3"
+    "-=0.3",
   );
 });
 
@@ -283,13 +283,13 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const achievementsContainer = document.querySelector(
-    ".achivements-container"
+    ".achivements-container",
   );
   const workExperienceTitle = achievementsContainer.querySelector(
-    ".left-achivement-container .title"
+    ".left-achivement-container .title",
   );
   const educationTitle = achievementsContainer.querySelector(
-    ".right-achivement-container .title"
+    ".right-achivement-container .title",
   );
 
   gsap.from(workExperienceTitle, {

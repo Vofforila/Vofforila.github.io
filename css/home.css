@@ -485,7 +485,8 @@
 }
 
 .popup {
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+  box-shadow:
+    inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(150, 70, 70, 0.1),
     4px 4px 5px 0px rgba(255, 255, 255, 0.1);
   background: linear-gradient(0deg, #2a2130 0%, #4e3c57 100%);
